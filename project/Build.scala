@@ -35,7 +35,7 @@ object MyFleetGirlsBuild extends Build {
     scalikejdbcGen := (scalikejdbcGen in (server, Compile)).evaluated,
     prof := (run in (profiler, Compile)).evaluated,
     runTester := (run in (tester, Compile)).evaluated,
-    runTesterEarth := runTester.toTask(" https://myfleet.moe").value
+    runTesterEarth := runTester.toTask(" https://myfleet.kr-kp.com").value
   )
 
   lazy val disableAggregates = Seq(
@@ -82,7 +82,7 @@ object MyFleetGirlsBuild extends Build {
     assemblyJarName in assembly := "MyFleetGirls.jar",
     incOptions := incOptions.value.withNameHashing(true),
     licenses := Seq("MIT License" -> url("http://www.opensource.org/licenses/mit-license.html")),
-    homepage := Some(url("https://myfleet.moe")),
+    homepage := Some(url("https://myfleet.kr-kp.com")),
     fork in Test := true
   )
 

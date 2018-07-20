@@ -50,7 +50,7 @@ object PostActor {
     println("============================================")
     if(auth2.isEmpty) println("パスワード認証無し") else println("パスワード認証に成功")
     println("MyFleetGirlsサーバへの接続に成功しました")
-    println(s"URL: https://myfleet.moe/user/${auth.get.memberId}")
+    println(s"URL: https://myfleet.kr-kp.com/user/${auth.get.memberId}")
     println("============================================")
     println()
   }
