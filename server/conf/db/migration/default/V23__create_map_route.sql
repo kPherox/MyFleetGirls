@@ -8,4 +8,4 @@ create table map_route(
         dest tinyint not null,
         fleet tinytext not null,
         created bigint not null
-) engine = ARIA, default charset=utf8;
+) engine = ARIA, default charset=utf8mb4;

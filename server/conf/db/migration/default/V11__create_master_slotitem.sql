@@ -13,4 +13,4 @@ create table master_slot_item(
         `length` int not null,
         rare int not null,
         info text not null
-) engine = ARIA, default charset=utf8;
+) engine = ARIA, default charset=utf8mb4;

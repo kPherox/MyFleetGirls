@@ -5,4 +5,4 @@ create table master_stype(
         `name` tinytext not null,
         scnt int not null,
         kcnt int not null
-) engine = ARIA, default charset=utf8;
+) engine = ARIA, default charset=utf8mb4;
