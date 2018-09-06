@@ -9,7 +9,7 @@ create table cell_info(
     `start` boolean not null,
     boss boolean not null,
     primary key(area_id, info_no, cell)
-) engine = ARIA, default charset=utf8;
+) engine = ARIA, default charset=utf8mb4;
 
 -- 暫定的に1-1, 2-1, 2-2, 2-3の対照表
 insert into cell_info values

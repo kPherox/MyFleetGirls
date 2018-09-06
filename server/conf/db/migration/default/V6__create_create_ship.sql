@@ -13,4 +13,4 @@ create table create_ship(
         complete_time bigint not null,
         created bigint not null,
         primary key(member_id, k_dock, complete_time)
-) engine = ARIA, default charset=utf8;
+) engine = ARIA, default charset=utf8mb4;

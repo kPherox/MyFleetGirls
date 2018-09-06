@@ -15,4 +15,4 @@ create table quest(
         progress_flag int not null,
         created bigint not null,
         primary key(member_id, id)
-) engine = ARIA default charset=utf8;
+) engine = ARIA default charset=utf8mb4;

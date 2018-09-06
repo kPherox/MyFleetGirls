@@ -22,4 +22,4 @@ create table ship(
         locked boolean not null,
         created bigint not null,
         primary key(member_id, id)
-) engine = ARIA, default charset=utf8;
+) engine = ARIA, default charset=utf8mb4;

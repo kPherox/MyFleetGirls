@@ -6,4 +6,4 @@ create table item_book(
         `name` tinytext not null,
         updated bigint not null,
         primary key(member_id, index_no)
-) engine = ARIA, default charset=utf8;
+) engine = ARIA, default charset=utf8mb4;

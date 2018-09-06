@@ -5,4 +5,4 @@ create table slot_item(
         slotitem_id int not null,
         `name` tinytext not null,
         primary key(member_id, id)
-) engine = ARIA, default charset=utf8;
+) engine = ARIA, default charset=utf8mb4;

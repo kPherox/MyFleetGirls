@@ -15,7 +15,7 @@ create table battle_result(
         get_ship_type tinytext,
         get_ship_name tinytext,
         created bigint not null
-) engine = ARIA, default charset=utf8;
+) engine = ARIA, default charset=utf8mb4;
 
 create table ship_battle_result(
         battle_id bigint not null,
@@ -23,4 +23,4 @@ create table ship_battle_result(
         id tinyint not null,
         exp int not null,
         lost_flag boolean not null
-) engine = ARIA, default charset=utf8;
+) engine = ARIA, default charset=utf8mb4;

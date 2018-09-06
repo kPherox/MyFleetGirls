@@ -5,4 +5,4 @@ create table map_info (
         cleared boolean not null,
         exboss_flag boolean not null,
         primary key(member_id, id)
-) engine = ARIA, default charset=utf8;
+) engine = ARIA, default charset=utf8mb4;
