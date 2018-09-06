@@ -22,7 +22,7 @@ create table master_ship_specs(
         sokuh int not null,
         soku int not null,
         `length` int not null
-) engine = ARIA, default charset=utf8;
+) engine = ARIA, default charset=utf8mb4;
 
 create table master_ship_after(
         id int not null primary key,
@@ -30,7 +30,7 @@ create table master_ship_after(
         aftershipid int not null,
         afterfuel int not null,
         afterbull int not null
-) engine = ARIA, default charset=utf8;
+) engine = ARIA, default charset=utf8mb4;
 
 create table master_ship_other(
         id int not null primary key,
@@ -48,4 +48,4 @@ create table master_ship_other(
         fuel_max int not null,
         bull_max int not null,
         slot_num int not null
-) engine = ARIA, default charset=utf8;
+) engine = ARIA, default charset=utf8mb4;

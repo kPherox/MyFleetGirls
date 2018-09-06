@@ -6,4 +6,4 @@ create table ship_sound(
         version int not null,
         sound mediumblob not null,
         primary key(ship_id, sound_id, version)
-) engine = ARIA, default charset=utf8;
+) engine = ARIA, default charset=utf8mb4;

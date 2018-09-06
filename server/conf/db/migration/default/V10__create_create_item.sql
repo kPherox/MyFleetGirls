@@ -13,4 +13,4 @@ create table create_item(
         flagship int not null,
         created bigint not null,
         unique(member_id, item_id)
-) engine = ARIA, default charset=utf8;
+) engine = ARIA, default charset=utf8mb4;
