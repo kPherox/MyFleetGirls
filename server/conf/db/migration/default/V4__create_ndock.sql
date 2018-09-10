@@ -6,4 +6,4 @@ create table n_dock(
         complete_time bigint not null,
         created bigint not null,
         primary key(member_id, id)
-) engine = ARIA, default charset=utf8mb4;
+) engine = ARIA, default charset=utf8;

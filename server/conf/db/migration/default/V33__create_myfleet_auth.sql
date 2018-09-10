@@ -4,4 +4,4 @@ create table myfleet_auth(
         hash binary(32) not null,
         salt binary(32) not null,
         created bigint not null
-) engine = ARIA, default charset=utf8mb4;
+) engine = ARIA, default charset=utf8;

@@ -14,14 +14,14 @@ create table basic(
         pt_win int not null,
         pt_lose int not null,
         created bigint not null
-) engine = ARIA, default charset=utf8mb4;
+) engine = ARIA, default charset=utf8;
 
 create table admiral(
         id bigint not null unique,
         nickname_id bigint not null,
         nickname tinytext not null,
         created bigint not null
-) engine = ARIA, default charset=utf8mb4;
+) engine = ARIA, default charset=utf8;
 
 create table material(
         id bigint not null auto_increment primary key,
@@ -34,4 +34,4 @@ create table material(
         bucket smallint not null,
         develop smallint not null,
         created bigint not null
-) engine = ARIA, default charset=utf8mb4;
+) engine = ARIA, default charset=utf8;
