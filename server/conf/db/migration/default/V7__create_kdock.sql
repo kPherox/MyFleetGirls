@@ -11,4 +11,4 @@ create table k_dock(
         bauxite int not null,
         created bigint not null,
         primary key(member_id, id)
-) engine = ARIA, default charset=utf8mb4;
+) engine = ARIA, default charset=utf8;

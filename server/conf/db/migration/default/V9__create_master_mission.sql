@@ -7,4 +7,4 @@ create table master_mission(
         fuel double not null,
         ammo double not null,
         index map_area_index (map_area)
-) engine = ARIA, default charset=utf8mb4;
+) engine = ARIA, default charset=utf8;
