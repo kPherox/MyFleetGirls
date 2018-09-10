@@ -7,4 +7,4 @@ create table ship_slot_item(
         id tinyint not null, -- 1 to 4
         slotitem_id int not null,
         primary key(member_id, ship_id, id)
-) engine = ARIA, default charset=utf8mb4;
+) engine = ARIA, default charset=utf8;

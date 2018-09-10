@@ -5,4 +5,4 @@ create table admiral(
         nickname_id bigint not null,
         nickname tinytext not null,
         created bigint not null
-) engine = ARIA, default charset=utf8mb4;
+) engine = ARIA, default charset=utf8;

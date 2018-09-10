@@ -9,4 +9,4 @@ create table mission_history(
         created bigint not null,
         index(member_id, created),
         unique(member_id, complete_time)
-) engine = ARIA, default charset=utf8mb4;
+) engine = ARIA, default charset=utf8;

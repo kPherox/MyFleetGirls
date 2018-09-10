@@ -7,7 +7,7 @@ create table deck_port(
         `name` tinytext not null,
         created bigint not null,
         primary key(member_id, id)
-) engine = ARIA, default charset=utf8mb4;
+) engine = ARIA, default charset=utf8;
 
 create table mission(
         member_id bigint not null,
@@ -17,7 +17,7 @@ create table mission(
         complete_time bigint not null,
         created bigint not null,
         primary key(member_id, deck_id)
-) engine = ARIA, default charset=utf8mb4;
+) engine = ARIA, default charset=utf8;
 
 create table deck_ship(
         deck_id tinyint not null,
@@ -25,4 +25,4 @@ create table deck_ship(
         member_id bigint not null,
         ship_id int not null,
         unique(member_id, deck_id, num)
-) engine = ARIA, default charset=utf8mb4;
+) engine = ARIA, default charset=utf8;
