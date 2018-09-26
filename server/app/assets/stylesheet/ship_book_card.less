@@ -1,0 +1,27 @@
+div#ship_image {
+    max-width: 300px;
+
+    div.card-image {
+        position: relative;
+        margin-top: 25px;
+        padding-top: 137.614678899%;
+
+        img {
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+
+            &::before {
+                content: "Image not found";
+                position: absolute;
+                width: 100%;
+                top: 50%;
+                transform: translate(0, -2rem);
+                text-align: center;
+                font-size: 2rem;
+            }
+        }
+    }
+}

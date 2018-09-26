@@ -11,13 +11,14 @@
   <title>@master.name -艦娘図鑑-</title>
   <script src="@Js.Vue1"></script>
   <script src="@Js.Coffee("st_ship_book")"></script>
+  <link rel="stylesheet" href="@routes.Assets.at("stylesheet/ship_book_card.min.css")" />
 } {
   @statistics_head("ship_book") {
     <h1>@master.stName @master.name<small>@master.yomi</small></h1>
 
     <div class="col-lg-3 col-md-4 col-sm-5" id="ship_image">
-      <div v-on:click="change" class="clickable">
-        <img v-bind:src="damaged ? '@routes.RestImage.ship2nd(master.id, "card_dmg")' : '@routes.RestImage.ship2nd(master.id, "card")'" style="margin-top:25px;width:100%;max-width:300px;" />
+      <div v-on:click="change" class="clickable card-image">
+        <img v-bind:src="damaged ? '@routes.RestImage.ship2nd(master.id, "card_dmg")' : '@routes.RestImage.ship2nd(master.id, "card")'" alt="" />
       </div>
       <small>画像提供：
         <span v-if="damaged">
