@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "mysql" % "mysql-connector-java" % "5.1.39",
   "org.scalatest" %% "scalatest" % "2.2.6" % "test",
   "org.apache.abdera" % "abdera-parser" % "1.1.3",
-  "net.sf.ehcache" % "ehcache" % "2.10.2",
+  "net.sf.ehcache" % "ehcache" % "2.10.5",
   "org.flywaydb" %% "flyway-play" % "3.0.0"
 )
 
