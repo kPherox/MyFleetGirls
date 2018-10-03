@@ -1,9 +1,10 @@
 
 val ver = "1.5.25"
 
-val scalaVer = "2.11.11"
+val scalaVer = "2.12.7"
 
 lazy val root = (project in file("."))
+  .withId("my-fleet-girls")
   .settings(rootSettings)
   .aggregate(server, client, library)
 
@@ -13,7 +14,6 @@ val runTester = inputKey[Unit]("run tester")
 val runTesterEarth = taskKey[Unit]("run tester")
 
 lazy val rootSettings = settings ++ disableAggregates ++ Seq(
-  name := "my-fleet-girls",
   commands ++= Seq(start),
   proxy := (run in (client, Compile)).evaluated,
   assembly := {
@@ -53,7 +53,7 @@ lazy val library = project
 
 lazy val update = project
   .settings(
-    scalaVersion := scalaVer,
+    settings,
     assemblyJarName in assembly := "update.jar"
   )
   .enablePlugins(AssemblyPlugin)
@@ -72,7 +72,6 @@ lazy val settings = Seq(
   javacOptions ++= Seq("-encoding", "UTF-8"),
   updateOptions := updateOptions.value.withCircularDependencyLevel(CircularDependencyLevel.Error),
   updateOptions := updateOptions.value.withCachedResolution(true),
-  incOptions := incOptions.value.withNameHashing(true),
   licenses := Seq("MIT License" -> url("http://www.opensource.org/licenses/mit-license.html")),
   homepage := Some(url("https://myfleet.moe")),
   fork in Test := true
@@ -80,7 +79,7 @@ lazy val settings = Seq(
 
 def start = Command.command("start") { state =>
   val subState = Command.process("project server", state)
-  Command.process("testProd", subState)
+  Command.process("runProd", subState)
   state
 }
 
