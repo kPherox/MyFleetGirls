@@ -25,7 +25,7 @@ vueConf = (id) ->
     area: 0
     info: 0
     is1st: false
-    period: false
+    period: true
     from: moment({year: 2014, month: 0, day: 1}).format('YYYY-MM-DD')
     to: moment().format('YYYY-MM-DD')
     modal: false
@@ -46,7 +46,7 @@ vueConf = (id) ->
         @counts = sumCounts
         @sum = sum
         @routes = data.filter (d) =>
-          (d.count * 1000) > @sum
+          (d.count * 1000) > @counts[d.dep]
       $.getJSON jsRoutes.controllers.Rest.cellInfo(@area, @info).url, (data) =>
         @cellInfo = data
       @setHash({})
