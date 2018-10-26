@@ -79,8 +79,7 @@ trait ShipParameter extends GraphData with AntiAirCutin {
 
 object ShipParameter {
   val stAbbNames = Map(
-    "重雷装巡洋艦" -> "雷巡", "重巡洋艦" -> "重巡", "軽巡洋艦" -> "軽巡",
-    "航空巡洋艦" -> "航巡", "航空戦艦" -> "航戦",
+    "航空巡洋艦" -> "航巡", "重雷装巡洋艦" -> "雷巡", "練習巡洋艦" -> "練巡",
     "水上機母艦" -> "水母"
   ).withDefault(identity)
 
